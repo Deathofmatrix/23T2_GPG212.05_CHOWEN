@@ -10,6 +10,7 @@ namespace LevelDesignSim
         [SerializeField] private Rigidbody2D rB2D;
         [SerializeField] private float speed;
         [SerializeField] private float jumpHeight;
+        [SerializeField] private float jumpDelay;
         [SerializeField] private int directionX = 1;
 
         void Start()
@@ -25,6 +26,17 @@ namespace LevelDesignSim
         public void ChangeDirection()
         {
             directionX = directionX > 0 ?-1 : 1;
+        }
+
+        public void Jump()
+        {
+            StartCoroutine(JumpCO());
+        }
+
+        private IEnumerator JumpCO()
+        {
+            yield return new WaitForSeconds(jumpDelay);
+            rB2D.velocity = new Vector2(rB2D.velocity.x, jumpHeight);
         }
     }
 }
