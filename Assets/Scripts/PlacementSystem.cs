@@ -70,7 +70,7 @@ namespace LevelDesignSim
                 }
             }
 
-            if (ctx.canceled) { _isDragging = false; }
+            if (ctx.canceled) _isDragging = false;
         }
     }
 }
