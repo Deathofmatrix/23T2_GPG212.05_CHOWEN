@@ -11,7 +11,7 @@ namespace LevelDesignSim
         [SerializeField] private int noOfPlayersFinished = 0;
         [SerializeField] private GameObject finishedPanel;
         [SerializeField] private TextMeshProUGUI finishedText;
-        [SerializeField] private TextMeshProUGUI finishedTitle;
+        private TextMeshProUGUI finishedTitle;
 
         private void Start()
         {

@@ -11,15 +11,11 @@ namespace LevelDesignSim
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                collision.gameObject.GetComponent<CharacterController>().ChangeDirection();
-
-                /*for (int i = 0; i < collision.contactCount; i++)
+                Vector2 direction = collision.GetContact(0).normal;
+                if (direction.x == 1 || direction.x == -1)
                 {
-                    if (Vector2.Angle(collision.contacts[i].normal, Vector2.left) <= 80f || Vector2.Angle(collision.contacts[i].normal, Vector2.right) <= 80f)
-                    {
-                        
-                    }
-                }*/
+                    collision.gameObject.GetComponent<CharacterController>().ChangeDirection();
+                }
             }
         }
     }
