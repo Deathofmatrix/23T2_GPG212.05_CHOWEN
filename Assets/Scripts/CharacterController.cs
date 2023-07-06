@@ -42,6 +42,11 @@ namespace LevelDesignSim
             yield return new WaitForSeconds(delay);
             _rigibody2D.velocity = new Vector2(_rigibody2D.velocity.x, jumpHeight);
         }
+
+        private void OnDisable()
+        {
+            Flag.noOfPlayersInactive++;
+        }
     }
 }
 

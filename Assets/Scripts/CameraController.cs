@@ -38,6 +38,7 @@ namespace LevelDesignSim
 
         private void Update()
         {
+            if (_isDragging) return;
             float clampedX = Mathf.Clamp(transform.position.x, _minBounds.x + + _halfWidth, _maxBounds.x - _halfWidth);
             float clampedY = Mathf.Clamp(transform.position.y, _minBounds.y + _halfHeight, _maxBounds.y - _halfHeight);
             transform.position =  new Vector3(clampedX, clampedY, transform.position.z);

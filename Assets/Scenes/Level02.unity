@@ -1418,6 +1418,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483491202}
   m_CullTransparentMesh: 1
+--- !u!114 &503847110 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4556854514529785860, guid: 1d383d5860fe955468a5e0f68103abcd, type: 3}
+  m_PrefabInstance: {fileID: 1549583828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &506936108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedPlaceable: {fileID: 7318440063666891875, guid: 957fd30843bee704aa6347fd211d3429, type: 3}
+  currentButtonScript: {fileID: 0}
   _isPointerOverUI: 0
 --- !u!156049354 &523871470
 Grid:
@@ -2296,6 +2308,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853052630}
   m_CullTransparentMesh: 1
+--- !u!1 &883631963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4556854514807392587, guid: 1d383d5860fe955468a5e0f68103abcd, type: 3}
+  m_PrefabInstance: {fileID: 1549583828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &905359143 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8364763291290364351, guid: 1e0f56399070f484a9d4e591247479af, type: 3}
@@ -4353,6 +4370,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1895555922}
     m_Modifications:
+    - target: {fileID: 8364763291290364336, guid: 98af271ce54b7a140ba8959560b67c84, type: 3}
+      propertyPath: numberOfObjectsToPlace
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8364763291290364350, guid: 98af271ce54b7a140ba8959560b67c84, type: 3}
       propertyPath: m_Name
       value: Block_1x1 - button
@@ -4929,6 +4950,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1895555922}
     m_Modifications:
+    - target: {fileID: 8364763291290364336, guid: b591f8a4f4e93d3489afab4d90473692, type: 3}
+      propertyPath: numberOfObjectsToPlace
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8364763291290364350, guid: b591f8a4f4e93d3489afab4d90473692, type: 3}
       propertyPath: m_Name
       value: Block_2x1 - button
@@ -5444,6 +5469,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1895555922}
     m_Modifications:
+    - target: {fileID: 8364763291290364336, guid: 06649626f95decc4fa94d00a2cf4d18b, type: 3}
+      propertyPath: numberOfObjectsToPlace
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8364763291290364350, guid: 06649626f95decc4fa94d00a2cf4d18b, type: 3}
       propertyPath: m_Name
       value: Block_1x2 - button
@@ -5905,6 +5934,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 708894022}
     m_Modifications:
+    - target: {fileID: 369097202907599636, guid: f5ff9af9084522d48885043777a72e38, type: 3}
+      propertyPath: finishedText
+      value: 
+      objectReference: {fileID: 503847110}
+    - target: {fileID: 369097202907599636, guid: f5ff9af9084522d48885043777a72e38, type: 3}
+      propertyPath: finishedPanel
+      value: 
+      objectReference: {fileID: 883631963}
     - target: {fileID: 369097202907599638, guid: f5ff9af9084522d48885043777a72e38, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -6182,6 +6219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1895555922}
     m_Modifications:
+    - target: {fileID: 8364763291290364336, guid: 1e0f56399070f484a9d4e591247479af, type: 3}
+      propertyPath: numberOfObjectsToPlace
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8364763291290364337, guid: 1e0f56399070f484a9d4e591247479af, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1

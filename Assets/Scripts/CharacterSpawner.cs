@@ -15,7 +15,7 @@ namespace LevelDesignSim
             {
                 foreach (var character in characterPrefabs)
                 {
-                    Instantiate(character);
+                    Instantiate(character, transform.position, Quaternion.identity);
                 }
                 _haveCharactersSpawned = true;
             }

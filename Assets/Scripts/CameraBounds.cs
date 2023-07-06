@@ -9,7 +9,7 @@ namespace LevelDesignSim
         private BoxCollider2D bounds;
         private CameraController cameraController;
 
-        private void Start()
+        private void Awake()
         {
             bounds = GetComponent<BoxCollider2D>();
             cameraController = FindObjectOfType<CameraController>();

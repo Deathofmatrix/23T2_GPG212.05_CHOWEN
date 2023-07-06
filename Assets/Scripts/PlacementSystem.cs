@@ -13,6 +13,7 @@ namespace LevelDesignSim
         private GameObject _currentPlaceable;
 
         [SerializeField] private GameObject selectedPlaceable;
+        [SerializeField] private SwitchCurrentObject currentButtonScript;
         private bool _isDragging = false;
         [SerializeField] private bool _isPointerOverUI;
 
@@ -26,10 +27,12 @@ namespace LevelDesignSim
             SwitchCurrentObject.ChoosePlaceable -= UpdatePlaceable;
         }
 
-        private void UpdatePlaceable(GameObject placeableToSwitchTo)
+        private void UpdatePlaceable(GameObject placeableToSwitchTo, SwitchCurrentObject buttonScript)
         {
-            Debug.Log("Update Placeable being called");
+            //Debug.Log("Update Placeable being called");
             selectedPlaceable = placeableToSwitchTo;
+            currentButtonScript = buttonScript;
+            //Debug.Log(currentButton);
         }
 
         private void Start()
@@ -63,10 +66,13 @@ namespace LevelDesignSim
         {
             if (ctx.started)
             {
-                if (!_isPointerOverUI)
+                if (_isPointerOverUI) return;
+
+                if (currentButtonScript?.numberOfObjectsToPlace > 0)
                 {
                     _currentPlaceable = Instantiate(selectedPlaceable);
                     _isDragging = ctx.started || ctx.performed;
+                    currentButtonScript.numberOfObjectsToPlace--;
                 }
             }
 
