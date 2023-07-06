@@ -138,5 +138,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   jumpHeight: 6
-  jumpDelay: 0.35
+  jumpDelay: 0.3
   directionX: 1
