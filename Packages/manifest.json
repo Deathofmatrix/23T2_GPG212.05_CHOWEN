@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.oezyowen.tools": "file:C:/Users/1028832/Documents/Unity Packages/UnityTools-0.1.0",
     "com.unity.collab-proxy": "2.0.3",
     "com.unity.feature.2d": "1.0.0",
     "com.unity.ide.rider": "3.0.20",

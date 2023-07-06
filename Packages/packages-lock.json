@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.oezyowen.tools": {
-      "version": "file:C:/Users/1028832/Documents/Unity Packages/UnityTools-0.1.0",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.2d.animation": {
       "version": "7.0.10",
       "depth": 1,
