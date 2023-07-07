@@ -559,7 +559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.010146436}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -3.0000305}
+  m_AnchoredPosition: {x: 0, y: -3}
   m_SizeDelta: {x: 2, y: 7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1494763759
@@ -746,7 +746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5324049502054063201, guid: bdcba8c75078a3247ac73e5b122b01ca, type: 3}
       propertyPath: sounds.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5324049502054063201, guid: bdcba8c75078a3247ac73e5b122b01ca, type: 3}
       propertyPath: sounds.Array.data[0].clip
